@@ -3,13 +3,19 @@ Get CUDA and OpenCL information using python
 
 ## Get CUDA Information
 
-Require ```pycuda``` package and run the following script:
+1. Install [pycuda](https://mathema.tician.de/software/pycuda/) package:
 
-```python
-python CUDAInfo.py
-```
+  ```shell
+  pip install pycuda
+  ```
 
-Output Example:
+2. Run the following script:
+
+  ```shell
+  python CUDAInfo.py
+  ```
+
+Example output:
 
 ```
 There are 1 CUDA device(s) detected:
@@ -53,13 +59,19 @@ Device 0: GeForce GTX 1080
 
 ## Get OpenCL Information
 
-Require ```pyopencl``` package and run the following script:
+1. Install [pyopencl](https://mathema.tician.de/software/pyopencl/) package:
 
-```python
-python OpenCLInfo.py
-```
+  ```shell
+  pip install pyopencl
+  ```
 
-Output Example:
+2. Run the following script:
+
+  ```shell
+  python CUDAInfo.py
+  ```
+
+Example output:
 
 ```
 There are 1 platform(s) detected:
@@ -151,3 +163,7 @@ Number of devices:     4
     Max Image3D size (D x H x W):  2048 x 16384 x 16384
   --------------------------------------------------------------------
 ```
+
+## License
+
+MIT
