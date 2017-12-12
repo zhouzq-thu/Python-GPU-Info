@@ -33,8 +33,8 @@ def printDeviceInfo(platform_id, device_id, prefix=''):
     device = devices[device_id]
     print(prefix + 'Device {:d}:'.format(device_id), str(device.name), 
         '[Type: {:s}]'.format(cl.device_type.to_string(device.type)))
-    print(prefix + '  Device vesion:                ', device.version)
-    print(prefix + '  Driver vesion:                ', device.driver_version)
+    print(prefix + '  Device version:               ', device.version)
+    print(prefix + '  Driver version:               ', device.driver_version)
     print(prefix + '  Vendor:                       ', device.vendor)
     print(prefix + '  Available:                    ', bool(device.available))
     print(prefix + '  Address bits:                 ', device.address_bits)

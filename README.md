@@ -83,8 +83,8 @@ Version:               OpenCL 1.2 (Oct 31 2017 18:19:43)
 Number of devices:     4
   --------------------------------------------------------------------
   Device 0: Intel(R) Core(TM) i7-6920HQ CPU @ 2.90GHz [Type: CPU]
-    Device vesion:                 OpenCL 1.2 
-    Driver vesion:                 1.1
+    Device version:                OpenCL 1.2 
+    Driver version:                1.1
     Vendor:                        Intel
     Available:                     True
     Address bits:                  64
@@ -103,8 +103,8 @@ Number of devices:     4
     Max Image3D size (D x H x W):  2048 x 2048 x 2048
   --------------------------------------------------------------------
   Device 1: Intel(R) HD Graphics 530 [Type: GPU]
-    Device vesion:                 OpenCL 1.2 
-    Driver vesion:                 1.2(Nov  9 2017 18:56:42)
+    Device version:                OpenCL 1.2 
+    Driver version:                1.2(Nov  9 2017 18:56:42)
     Vendor:                        Intel Inc.
     Available:                     True
     Address bits:                  64
@@ -123,8 +123,8 @@ Number of devices:     4
     Max Image3D size (D x H x W):  2048 x 2048 x 2048
   --------------------------------------------------------------------
   Device 2: AMD Radeon Pro 460 Compute Engine [Type: GPU]
-    Device vesion:                 OpenCL 1.2 
-    Driver vesion:                 1.2 (Nov  9 2017 18:48:40)
+    Device version:                OpenCL 1.2 
+    Driver version:                1.2 (Nov  9 2017 18:48:40)
     Vendor:                        AMD
     Available:                     True
     Address bits:                  32
@@ -143,8 +143,8 @@ Number of devices:     4
     Max Image3D size (D x H x W):  2048 x 2048 x 2048
   --------------------------------------------------------------------
   Device 3: GeForce GTX 1080 [Type: GPU]
-    Device vesion:                 OpenCL 1.2 
-    Driver vesion:                 10.29.10 378.10.10.10.25.102
+    Device version:                OpenCL 1.2 
+    Driver version:                10.29.10 378.10.10.10.25.102
     Vendor:                        NVIDIA
     Available:                     True
     Address bits:                  64
