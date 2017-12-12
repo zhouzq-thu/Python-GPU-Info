@@ -8,7 +8,7 @@ def openclInfo():
     """Print OpenCL information.
     """
     platforms = cl.get_platforms()
-    print('There are {:d} platforms detected:\n'.format(len(platforms)))
+    print('There are {:d} platform(s) detected:\n'.format(len(platforms)))
     print(70 * '-')
     for platform_id, platform in enumerate(platforms):
         print('Platform:             ', platform.name)

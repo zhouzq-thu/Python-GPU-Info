@@ -12,7 +12,7 @@ python CUDAInfo.py
 Output Example:
 
 ```
-There are 1 CUDA devices:
+There are 1 CUDA device(s) detected:
 
 --------------------------------------------------------------------------------
 Device 0: GeForce GTX 1080
@@ -62,7 +62,7 @@ python OpenCLInfo.py
 Output Example:
 
 ```
-There are 1 platforms detected:
+There are 1 platform(s) detected:
 
 ----------------------------------------------------------------------
 Platform:              Apple
@@ -150,5 +150,4 @@ Number of devices:     4
     Max Image2D size (H x W):      32768 x 32768
     Max Image3D size (D x H x W):  2048 x 16384 x 16384
   --------------------------------------------------------------------
-[Finished in 0.4s]
 ```

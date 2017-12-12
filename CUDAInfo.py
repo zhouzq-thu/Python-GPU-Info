@@ -9,7 +9,7 @@ def cudaInfo():
     """Print CUDA information.
     """
     deviceCount = cuda.Device.count()
-    print('There are {:d} CUDA devices:\n'.format(deviceCount))
+    print('There are {:d} CUDA device(s) detected:\n'.format(deviceCount))
     print(80 * '-')
     for device_id in range(deviceCount):
         printDeviceInfo(device_id)
