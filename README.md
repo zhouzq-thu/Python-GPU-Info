@@ -6,13 +6,13 @@ Get CUDA and OpenCL information using python
 1. Install [pycuda](https://mathema.tician.de/software/pycuda/) package:
 
   ```shell
-  pip install pycuda
+  pip3 install pycuda
   ```
 
 2. Run the following script:
 
   ```shell
-  python CUDAInfo.py
+  python3 CUDAInfo.py
   ```
 
 Example output:
@@ -62,13 +62,13 @@ Device 0: GeForce GTX 1080
 1. Install [pyopencl](https://mathema.tician.de/software/pyopencl/) package:
 
   ```shell
-  pip install pyopencl
+  pip3 install pyopencl
   ```
 
 2. Run the following script:
 
   ```shell
-  python CUDAInfo.py
+  python3 CUDAInfo.py
   ```
 
 Example output:
