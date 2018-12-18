@@ -21,15 +21,15 @@ Example output:
 There are 1 CUDA device(s) detected:
 
 --------------------------------------------------------------------------------
-Device 0: GeForce GTX 1080
-  CUDA Driver Version / Runtime Version:         9.1 / 9.0
-  CUDA Capability Major/Minor version number:    6.1
-  Total amount of global memory:                 8191 MBytes
-  (20) Multiprocessors x (128) CUDA Cores/MP:    2560 CUDA Cores
-  GPU Clock rate:                                1733.5 MHz
-  Memory Clock rate:                             5005.0 MHz
-  Memory Bus Width:                              256-bit
-  L2 Cache Size:                                 2048.0 MBytes
+Device 0: GeForce RTX 2080 Ti
+  CUDA Driver Version / Runtime Version:         10.0 / 10.0
+  CUDA Capability Major/Minor version number:    7.5
+  Total amount of global memory:                 10986 MBytes
+  (68) Multiprocessors x ( 64) CUDA Cores/MP:    4352 CUDA Cores
+  GPU Clock rate:                                1635.0 MHz
+  Memory Clock rate:                             7000.0 MHz
+  Memory Bus Width:                              352-bit
+  L2 Cache Size:                                 5.5 MBytes
   Max Texture Dimension Size (x,y,z):            1D = (131072)
                                                  2D = (131072, 65536)
                                                  3D = (16384, 16384, 16384)
@@ -39,20 +39,20 @@ Device 0: GeForce GTX 1080
   Total amount of shared memory per block:       49152 Bytes
   Total number of registers available per block: 65536
   Warp size:                                     32
-  Maximum number of threads per multiprocessor:  2048
+  Maximum number of threads per multiprocessor:  1024
   Maximum number of threads per block:           1024
   Maximum sizes of each dimension of a block:    1024 x 1024 x 64
   Maximum sizes of each dimension of a grid:     2147483647 x 65535 x 65535
   Maximum memory pitch:                          2147483647 Bytes
   Texture alignment:                             512 Bytes
-  Concurrent copy and kernel execution:          True with 2 copy engine(s)
+  Concurrent copy and kernel execution:          True with 3 copy engine(s)
   Run time limit on kernels:                     True
   Integrated GPU sharing Host Memory:            False
   Support host page-locked memory mapping:       True
   Alignment requirement for Surfaces:            True
   Device has ECC support:                        False
   Device supports Unified Addressing (UVA):      True
-  Device PCI Bus ID / PCI location ID:           196 / 0
+  Device PCI Bus ID / PCI location ID:           1 / 0
   Compute Mode:                                  DEFAULT
 --------------------------------------------------------------------------------
 ```
