@@ -1,6 +1,6 @@
 from __future__ import print_function
 __author__      = "Zhi-Qiang Zhou"
-__copyright__   = "Copyright 2017"
+__copyright__   = "Copyright 2018"
 
 import pycuda.autoinit
 import pycuda.driver as cuda
@@ -18,12 +18,16 @@ def cudaInfo():
 def convertSMVer2Cores(major, minor):
     """GPU Architecture definitions.
 
+    Refs:
+        https://en.wikipedia.org/wiki/CUDA
+        https://github.com/NVIDIA/cuda-samples/blob/master/Common/helper_cuda.h
+
     Args:
         major (int): major version
         minor (int): minor version
 
     Returns:
-        int: the # of cores per SM
+        int: the # of cores per Streaming Multiprocessor (SM)
 
     """
     sm = str(major) + str(minor)
@@ -38,6 +42,8 @@ def convertSMVer2Cores(major, minor):
     elif sm == '61': return 128 # Pascal Generation (SM 6.1) GP10x class
     elif sm == '62': return 128 # Pascal Generation (SM 6.2) GP10x class
     elif sm == '70': return 64  # Volta Generation (SM 7.0) GV100 class
+    elif sm == '72': return 64  # Volta Generation (SM 7.2) GV10B class
+    elif sm == '75': return 64  # Turing Generation (SM 7.5) TU10x class
 
 def printDeviceInfo(device_id, prefix=''):
     """Print CUDA device information.
@@ -67,7 +73,7 @@ def printDeviceInfo(device_id, prefix=''):
     print(prefix + '  CUDA Capability Major/Minor version number:   ', 
         str(major) + '.' + str(minor))
     print(prefix + '  Total amount of global memory:                ', 
-        device.total_memory()//1024**2, 'MBytes')
+        device.total_memory() // 1024**2, 'MBytes')
     print(prefix + '  ({:2d}) Multiprocessors x ({:3d}) CUDA Cores/MP:   '.format(
         attrs['MULTIPROCESSOR_COUNT'], cores), 
         attrs['MULTIPROCESSOR_COUNT'] * cores, 'CUDA Cores')
@@ -78,7 +84,7 @@ def printDeviceInfo(device_id, prefix=''):
     print(prefix + '  Memory Bus Width:                             ', 
         '{:d}-bit'.format(attrs['GLOBAL_MEMORY_BUS_WIDTH']))
     print(prefix + '  L2 Cache Size:                                ', 
-        attrs['L2_CACHE_SIZE']/1024, 'MBytes')
+        attrs['L2_CACHE_SIZE'] / 1024**2, 'MBytes')
     print(prefix + '  Max Texture Dimension Size (x,y,z):           ', 
         '1D = ({:d})'.format(attrs['MAXIMUM_TEXTURE1D_WIDTH']))
     print(prefix + '                                                ', 
